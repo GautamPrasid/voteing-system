@@ -1,2 +1,32 @@
 # Auto detect text files and perform LF normalization
-* text=auto
+* text=auto eol=lf
+
+# Source & Config files
+*.java text diff=java
+*.fxml text
+*.xml text
+*.properties text
+*.sql text
+*.md text
+*.json text
+*.css text
+
+# Shell scripts must have LF line endings
+*.sh text eol=lf
+
+# Windows scripts must have CRLF line endings
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary files
+*.jar binary
+*.war binary
+*.ear binary
+*.class binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
